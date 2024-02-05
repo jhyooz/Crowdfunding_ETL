@@ -3,14 +3,8 @@ DROP DATABASE IF EXISTS crowdfunding_db;
 
 -- Create and use the database
 CREATE DATABASE crowdfunding_db;
-\c crowdfunding_db;
 
--- Drop the schema if it exists
-DROP SCHEMA IF EXISTS "miniproject" CASCADE;
-
--- Create the schema
-CREATE SCHEMA "miniproject";
-SET search_path TO miniproject;
+-- Connect to crowdfunding_db
 
 -- Drop the tables if they exist -- NOTE: using cascade so I can run this multiple times.
 DROP TABLE IF EXISTS "contacts" CASCADE;
