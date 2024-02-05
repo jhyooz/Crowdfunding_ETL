@@ -1,7 +1,7 @@
 -- Drop the database if it exists
 DROP DATABASE IF EXISTS crowdfunding_db;
 
--- Create and use the database
+-- Create the database
 CREATE DATABASE crowdfunding_db;
 
 -- Connect to crowdfunding_db
