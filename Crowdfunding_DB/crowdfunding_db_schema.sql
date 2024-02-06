@@ -1,10 +1,7 @@
--- Drop the database if it exists
-DROP DATABASE IF EXISTS crowdfunding_db;
-
 -- Create the database
 CREATE DATABASE crowdfunding_db;
 
--- Connect to crowdfunding_db
+-- Change connection to the crowdfunding_db
 
 -- Drop the tables if they exist -- NOTE: using cascade so I can run this multiple times.
 DROP TABLE IF EXISTS "contacts" CASCADE;
@@ -68,4 +65,5 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
---- WHEN IMPORTING DATA -- do campaign last due to multiple foreign keys
+-- Importing data from the csv files is done using the import/export function in pgAdmin
+-- Do campaign last due to multiple foreign keys
