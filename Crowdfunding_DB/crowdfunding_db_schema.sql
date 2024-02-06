@@ -65,5 +65,4 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
--- Importing data from the csv files is done using the import/export function
--- Do campaign last due to multiple foreign keys
+-- Import data from the csv files but make sure to do campaign last due to multiple foreign keys
